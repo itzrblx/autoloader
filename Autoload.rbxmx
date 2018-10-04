@@ -1,0 +1,32 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<Meta name="ExplicitAutoJoints">false</Meta>
+	<External>null</External>
+	<External>nil</External>
+	<Item class="ModuleScript" referent="RBX633A3941CCC64960AE3F81AF5D2F23F7">
+		<Properties>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">Autoload</string>
+			<string name="ScriptGuid">{41630005-3D53-4895-85FE-0BB05B777F45}</string>
+			<ProtectedString name="Source"><![CDATA[--[[
+	By IsThatZack
+	
+	This module Glues a bunch of scripts together by getting all ModuleScripts in a folder.
+--]]
+
+
+-- NO MORE EDITTING
+-- The module:
+local module = {}
+
+
+for i,v in pairs(script:GetChildren()) do
+	if v.ClassName == "ModuleScript" then
+		module[v.Name] = require(v)
+	end
+end
+
+return module]]></ProtectedString>
+			<BinaryString name="Tags"></BinaryString>
+		</Properties>
+	</Item>
+</roblox>
