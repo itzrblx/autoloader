@@ -17,3 +17,6 @@ Let's say there is a function in it called Get:
 ```lua
 al.Trello.Get(...)
 ```
+
+## Contributing
+Fork this script and edit it to your liking.  Then make a merge request and we will view your code.  Thanks for using it, contributions are apprieciated.
